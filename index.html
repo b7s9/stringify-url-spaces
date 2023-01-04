@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link Tracker Remover</title>
+
+    <meta name="og:title" content="Stringify Medality Url" />
+    <meta name="og:author" content="b7s9" />
+    <meta name="og:description" content="Turn spaces into plus symbols" />
+
+    <link rel="stylesheet" href="normalize.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #282828;
+        color: #eee;
+        font-family: sans-serif;
+        font-size: 110%;
+      }
+
+      input,
+      textarea,
+      button {
+        background: #3a3a3a;
+        color: #ccc;
+        border: 1px solid #888;
+        font-size: 0.94rem;
+      }
+
+      main {
+        display: block;
+        margin: 0 auto;
+        max-width: 48rem;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 1.86rem;
+      }
+
+      #link-input,
+      #link-output {
+        display: block;
+        margin: 1.25rem 0;
+        width: 100%;
+      }
+
+      #link-input {
+        padding: 2rem 1.25rem;
+      }
+
+      #link-output {
+        padding: 0.5rem 0.25rem;
+      }
+
+      #copy-to-clipboard {
+        display: block;
+        cursor: pointer;
+        width: 200px;
+        height: 75px;
+        text-align: center;
+        margin: 2rem auto;
+      }
+
+      #copy-to-clipboard:focus {
+        outline: 4px solid forestgreen;
+        background: forestgreen;
+      }
+
+      #copy-to-clipboard:hover {
+        background: forestgreen;
+      }
+
+      #copy-to-clipboard:active {
+        background: #5a5a5a;
+      }
+
+      #alert-message {
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: springgreen;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Stringify Medality Url</h1>
+      <div class="input-area">
+        <label for="link-input">Paste Link Below</label>
+        <textarea id="link-input" type="text"></textarea>
+        <label for="link-output">Output</label>
+        <input id="link-output" type="text" />
+        <button id="copy-to-clipboard">Copy to Clipboard</button>
+        <p id="alert-message"></p>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
